@@ -109,7 +109,11 @@ body {
     padding: 14px 0 3px 15px;
 }
 
-.banner-area_text span {
+.banner-area_text__title {
+    font-size: 48px;   
+}
+
+.banner-area_text .banner-area_text__description {
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -119,8 +123,13 @@ body {
     color: #F16D7F;
 }
 
+.main-menu {
+    margin-bottom: 96px;
+}
+
 .main-menu-row-one {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 65px;
 }
@@ -130,6 +139,10 @@ body {
     position: relative;
     max-width: 360px;
     width: 100%;
+}
+
+.main-menu_item img {
+    min-width: 100%;
 }
 
 .main-menu_item_text {
@@ -160,4 +173,37 @@ body {
 
 .main-menu-row-all {
     margin-top: 30px;
+}
+
+.advantage-block {
+    background-color: #222224;
+    padding: 103px 0;
+}
+
+.advantage-block-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantag-item {
+    text-align: center;
+    color: #FBFBFB;
+    padding: 0 30px;
+}
+
+.advantag-item_img {
+    height: 40px;
+}
+
+.advantage-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 25px 0 16px;
+}
+
+.advantage-description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
 }
