@@ -207,3 +207,73 @@ body {
     font-size: 14px;
     line-height: 17px;
 }
+
+.botton-block {
+    background-image: url(img/footer-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+}
+
+.botton-block-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.left-block {
+    width: 360px;
+    text-align: center;
+}
+
+.left-block-img {
+    margin-bottom: 30px;
+}
+
+.left-block-description {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.botton-block_form-group {
+    display: flex;
+}
+
+.botton-block_form-group .inpt {
+    width: 256px;   
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 20px;
+    background: #E1E1E1;
+    border: 1px solid transparent;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    
+}
+
+.botton-block_form-group .submit {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 16px;
+    color: #fff;
+    background: #F16D7F;
+    border: 1px solid transparent;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.footer-form {
+    text-align: center;
+}
+
+.footer-form-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-form-subtitle { 
+    font-size: 14px;
+    font-weight: 400;
+}
