@@ -57,6 +57,7 @@ body {
 .menu {
     padding-right: 33px;
     padding-top: 3px;
+    cursor: pointer;
 }
 
 .user {
@@ -332,6 +333,11 @@ body {
     width: 232px;
     height: 764px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    display: none;
+}
+
+.header-menu.active-menu {
+    display: block;
 }
 
 .header-menu h4 {
@@ -358,6 +364,35 @@ body {
     padding-bottom: 14px;
 }
 
+.header-menu-close {
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.header-menu-close:before,
+.header-menu-close:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 15px;
+    width: 2px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.header-menu-close:before {
+    transform: rotate(45deg);
+}
+
+.header-menu-close:after {
+    transform: rotate(-45deg);
+}
+
 .header-sub-menu-item a {
     display: block;
     font-weight: 400;
@@ -367,4 +402,10 @@ body {
     text-decoration: none;
     padding: 6px 0 6px 21px;
 
+}
+
+@media (max-width: 1605px) {
+    .header-menu {
+        right: 0;
+    }
 }
