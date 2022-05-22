@@ -543,6 +543,22 @@ body {
     text-decoration: none;
 }
 
+.breadcrumbs-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.breadcrumbs-link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumbs-lin:nth-last-of-type(1) {
+    font-weight: 700;
+}
+
 @media (max-width: 1605px) {
     .header-menu {
         right: 0;
