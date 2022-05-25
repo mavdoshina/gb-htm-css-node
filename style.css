@@ -17,7 +17,7 @@ body {
     width: 100%;
 }
 
-.header {
+.header-block {
     background: #222222;
     height: 75px;
 }
@@ -544,8 +544,19 @@ body {
 }
 
 .breadcrumbs-block {
+    background: #F8F3F4;
+    padding: 60px 0;
+}
+
+.title-product {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.breadcrumbs-list {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
 }
 
 .breadcrumbs-link {
@@ -553,14 +564,122 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #636363;
+    text-decoration: none;
 }
 
-.breadcrumbs-lin:nth-last-of-type(1) {
+.breadcrumbs-link:after {
+    content: '/';
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.breadcrumbs-list li:nth-last-of-type(1) .breadcrumbs-link:after {
+    display: none;
+}
+
+.breadcrumbs-list li:nth-last-of-type(1) .breadcrumbs-link {
     font-weight: 700;
+    color: #F16D7F;
+}
+
+
+.slider-element {
+    position: relative;
+}
+
+.slider-element .arrow {
+    width: 47px;
+    height: 47px;
+    padding: 0;
+    margin: 0 10px;
+    cursor: pointer;
+    background: none;
+    position: absolute;
+    top: 43%;
+    background: rgba(42, 42, 42, 0.15);
+    z-index: 3;
+    box-shadow: none;
+    border: none;
+    font-size: 24px;
+}
+
+.slider-element .arrow .arrow-icon {
+    margin-top: 5px;
+}
+
+.slider-element .arrow:hover {
+    color: #F16D7F;
+}
+
+.slider-element .arrow.arrow-left {
+    left: 0;
+    right: auto;
+}
+
+
+.slider-element .arrow.arrow-right {
+    right: 0;
+    left: auto;
 }
 
 @media (max-width: 1605px) {
     .header-menu {
         right: 0;
     }
+}
+
+.description-element {
+    margin-top: -40px;
+    margin-bottom: 128px;
+}
+
+.description-element-area {
+    border: 1px solid #EAEAEA;
+    padding: 65px 0;
+    position: relative;
+    background: #fff;
+}
+
+.description-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.title-collection {
+    position: relative;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-align: center;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.title-collection:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 63px;
+    height: 3px;
+    background: #EF5B70;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-element {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.description-element-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
 }

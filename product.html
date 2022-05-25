@@ -5,109 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ed391f96d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="slick-slider.css">
     <link rel="stylesheet" href="style.css">
     <title>Страница продукта</title>
 </head>
 <body>
     <header class="header">
-        <div class="container flex-btw">
-            <div class="header-left flex-row">
-                <a href="/" class="logo">
-                    <img src="img/logo.svg" alt="logo">
-                </a>
-                <div class="search">
-                    <img src="img/search.svg" alt="search">
+        <div class="header-block">
+            <div class="container flex-btw">
+                <div class="header-left flex-row">
+                    <a href="/" class="logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <div class="search">
+                        <img src="img/search.svg" alt="search">
+                    </div>
                 </div>
-            </div>
-            <div class="header-right flex-row">
-                <div class="menu">
-                    <img src="img/menu.svg" alt="menu">
+                <div class="header-right flex-row">
+                    <div class="menu">
+                        <img src="img/menu.svg" alt="menu">
+                    </div>
+                    <a href="#" class="user">
+                        <img src="img/user.svg" alt="user">
+                    </a>
+                    <a href="#" class="basket">
+                        <img src="img/basket.svg" alt="basket">
+                        <span class="basket-count">5</span>
+                    </a>
                 </div>
-                <a href="#" class="user">
-                    <img src="img/user.svg" alt="user">
-                </a>
-                <a href="#" class="basket">
-                    <img src="img/basket.svg" alt="basket">
-                    <span class="basket-count">5</span>
-                </a>
+                <nav class="header-menu">
+                    <span class="header-menu-close"></span>
+                    <h4>Menu</h4>
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-item-title" href="">MAN</a>
+                            <ul class="header-sub-menu">
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Bags</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Denim</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-item-title" href="">WOMAN</a>
+                            <ul class="header-sub-menu">
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Jackets & Coats</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Shirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-item-title" href="">KIDS</a>
+                            <ul class="header-sub-menu">
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Jackets & Coats</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Shirts</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Bags</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header-menu">
-                <span class="header-menu-close"></span>
-                <h4>Menu</h4>
-                <ul class="header-menu-list">
-                    <li class="header-menu-item">
-                        <a class="header-menu-item-title" href="">MAN</a>
-                        <ul class="header-sub-menu">
-                            <li class="header-sub-menu-item">
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Bags</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Denim</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">T-Shirts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-menu-item">
-                        <a class="header-menu-item-title" href="">WOMAN</a>
-                        <ul class="header-sub-menu">
-                            <li class="header-sub-menu-item">
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Jackets & Coats</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Polos</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">T-Shirts</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Shirts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-menu-item">
-                        <a class="header-menu-item-title" href="">KIDS</a>
-                        <ul class="header-sub-menu">
-                            <li class="header-sub-menu-item">
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Jackets & Coats</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Polos</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">T-Shirts</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Shirts</a>
-                            </li>
-                            <li class="header-sub-menu-item">
-                                <a href="#">Bags</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </div>
 
         <div class="breadcrumbs-block">
-            <div class="title-product">NEW ARRIVALS </div>
-            <ul class="breadcrumbs-list">
-                <li><a href="#" class="breadcrumbs-link">HOME</a></li>
-                <li><a href="#" class="breadcrumbs-link">MEN</a></li>
-                <li><a href="#" class="breadcrumbs-link">NEW ARRIVALS</a></li>
-            </ul>
+            <div class="container flex-btw">
+                <div class="title-product">NEW ARRIVALS </div>
+                <ul class="breadcrumbs-list">
+                    <li><a href="#" class="breadcrumbs-link">HOME</a></li>
+                    <li><a href="#" class="breadcrumbs-link">MEN</a></li>
+                    <li><a href="#" class="breadcrumbs-link">NEW ARRIVALS</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <div class="slider-element">
+        <img src="img/slider-1.jpeg" alt="slider1">
+        <img src="img/slider-1.jpeg" alt="slider2">
+    </div>
+
+    <section class="description-element">
+        <div class="container description-element-area">
+            <div class="description-container">
+                <h4 class="title-collection">WOMEN COLLECTION</h4>
+                <h1 class="title-element">MOSCHINO CHEAP AND CHIC</h1>
+                <p class="description-element-text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <div class="price">$561</div>
+                <div class="block-select"></div>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
     <section class="product-list">
         <div class="container">
@@ -199,6 +222,8 @@
             </div>
         </div>
     </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
