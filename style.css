@@ -749,9 +749,19 @@ details.filter-details[open] > summary::after {
   background-image: url(img/filter-color.svg);
 }
 
-details.filter-details {
+.filter-catalog {
+  position: relative;
   width: 360px;
+}
+
+details.filter-details {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
   padding: 15px;
+  z-index: 1;
+  background: #fff;
 }
 
 details.filter-details[open] {
@@ -907,4 +917,43 @@ details.filter-category[open] > summary {
 
 .product-catalog-list {
   margin-top: 50px;
+  margin-bottom: 96px;
+}
+
+.pagination-area {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0;
+}
+
+.pagination-area__list {
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
+  padding: 12px;
+  border: 1px solid #EBEBEB;
+  list-style-type: none;
+  color: #EBEBEB;
+  border-radius: 3px;
+}
+.pagination-area__list li {
+  flex-grow: 1;
+}
+.pagination-area__list a {
+  text-decoration: none;
+  color: #EBEBEB;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.pagination-area__list a:hover {
+  color: #EF5B70;
+}
+.pagination-area__list .pagination-arrow {
+  display: inline-block;
+  padding-top: 2px;
+}
+.pagination-area__list .pagination-active {
+  color: #EF5B70;
 }/*# sourceMappingURL=style.css.map */
