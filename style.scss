@@ -980,3 +980,43 @@ details.filter-category[open] > summary {
         color: #EF5B70;
     }
 }
+
+.check-offer li {
+    list-style-type: none;
+}
+
+.check-offer li:before {
+    content: '\f00c';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    padding-right: 23px;
+}
+
+.content-area__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-form {
+    width: 32%;
+
+    .inpt {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #A4A4A4;
+        margin-bottom: 21px;
+    }
+}
+
+.label-title {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.content-area__description {
+    width: 55%;
+}
