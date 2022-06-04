@@ -981,8 +981,13 @@ details.filter-category[open] > summary {
     }
 }
 
+.check-offer {
+    margin-top: 21px;
+}
+
 .check-offer li {
     list-style-type: none;
+    margin-bottom: 12px;
 }
 
 .check-offer li:before {
@@ -995,6 +1000,7 @@ details.filter-category[open] > summary {
 .content-area__flex {
     display: flex;
     justify-content: space-between;
+    padding: 64px 0 96px;
 }
 
 .registration-form {
@@ -1007,6 +1013,29 @@ details.filter-category[open] > summary {
         border: 1px solid #A4A4A4;
         margin-bottom: 21px;
     }
+
+    p {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-bottom: 40px;
+    }
+}
+
+.registration-form__submit {
+    background: #F16D7F;
+    padding: 16px 27px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    width: 167px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .label-title {
@@ -1018,5 +1047,37 @@ details.filter-category[open] > summary {
 }
 
 .content-area__description {
-    width: 55%;
+    width: 57%;
+}
+
+.radio-list {
+    display: flex;
+    margin-bottom: 33px;
+    margin-top: 31px;
+}
+
+.radio-list__item:nth-of-type(1) {
+    margin-right: 25px;
+}
+
+.radio-list__item {
+    display: flex;
+}
+
+.radio-list__item label {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    margin-left: 10px;
+}
+
+.content-area__description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.content-area__description__title {
+    margin-bottom: 22px;
+    font-weight: 300;
 }
