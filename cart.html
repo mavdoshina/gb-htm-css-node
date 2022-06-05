@@ -36,7 +36,7 @@
                     </a>
                 </div>
                 <nav class="header-menu">
-                    <span class="header-menu-close"></span>
+                    <span class="close-buttom  header-menu-close"></span>
                     <h4>Menu</h4>
                     <ul class="header-menu-list">
                         <li class="header-menu-item">
@@ -106,50 +106,70 @@
 
         <div class="breadcrumbs-block">
             <div class="container flex-btw">
-                <div class="title-product">REGISTRATION</div>
+                <div class="title-product">SHOPPING CART</div>
             </div>
         </div>
     </header>
 
-   <section class="content-area">
-       <div class="container content-area__flex">
-            
-                <form action="" class="registration-form">
-                    <label class="label-title">Your Name</label>
-                    <input type="text" class="inpt-form" placeholder="First Name">
-                    <input type="text" class="inpt-form" placeholder="Last Name">
-                    <div class="radio-list">
-                        <div class="radio-list__item">
-                            <input type="radio" name="gender" value="male"  id="gender_male">
-                            <label for="gender_male">Male</label>
-                        </div>
-                        <div class="radio-list__item">
-                            <input type="radio" name="gender" value="female"  id="gender_female">
-                            <label for="gender_female">Female</label>
+    <section class="area-cart">
+        <div class="container area-cart__row">
+            <div class="cart-list">
+                <div class="cart-list__item">
+                    <img src="img/cart-1.jpeg" alt="MANGO  PEOPLE  T-SHIRT">
+                    <div class="cart-list__item__description">
+                        <div class="close-buttom"></div>
+                        <h3>MANGO  PEOPLE  T-SHIRT</h3>
+                        <div class="cart-list__item__character">Price: <span>$300</span></div>
+                        <div class="cart-list__item__character">Color: Red</div>
+                        <div class="cart-list__item__character">Size: Xl</div>
+                        <div class="cart-list__item__character">Quantity:
+                            <input type="number" class="inpt" min="1" value="1">
                         </div>
                     </div>
-                    <label class="label-title">Login details</label>
-                    <input type="email" class="inpt-form" placeholder="Email">
-                    <input type="password" class="inpt-form" placeholder="Password">
-                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
 
-                    <button type="submit" class="btn-pink registration-form__submit">JOIN NOW <img src="img/arrow-btn.svg" alt="arrow-botom"></button>
+                </div>
+
+                <div class="cart-list__item">
+                    <img src="img/cart-2.jpeg" alt="MANGO  PEOPLE  T-SHIRT">
+                    <div class="cart-list__item__description">
+                        <div class="close-buttom"></div>
+                        <h3>MANGO  PEOPLE  T-SHIRT</h3>
+                        <div class="cart-list__item__character">Price: <span>$300</span></div>
+                        <div class="cart-list__item__character">Color: Red</div>
+                        <div class="cart-list__item__character">Size: Xl</div>
+                        <div class="cart-list__item__character">Quantity:
+                            <input type="number" class="inpt" min="1" value="1">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart__btn-row">
+                    <button class="btn__border">CLEAR SHOPPING CART</button>
+                    <button class="btn__border">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+            <div class="cart-form">
+
+                <form action="" class="">
+                    <label class="label-title">SHIPPING ADRESS</label>
+                    <input type="text" class="inpt-form" placeholder="Country" name="country">
+                    <input type="text" class="inpt-form" placeholder="State" name="state">
+                    <input type="text" class="inpt-form" placeholder="Postcode / Zip" name="zip">
+                    <button type="submit" class="btn__border">GET A QUOTE</button>
                 </form>
-           
-            <article class="content-area__description">
-                <h3 class="content-area__description__title">LOYALTY HAS ITS PERKS</h3>
-                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                <ul class="check-offer">
-                    <li>15% off welcome offer</li>
-                    <li>Free shipping, returns and exchanges on all orders</li>
-                    <li>$10 off a purchase on your birthday</li>
-                    <li>Early access to products</li>
-                    <li>Exclusive offers & rewards</li>
-                </ul>
-            </article>
-       </div>
-   </section>
-    
+
+                <form class="total-block">
+                    <input type="hidden" name="sub-tottal" value="900">
+                    <input type="hidden" name="grand-tottal" value="900">
+                    <div class="sub-tottal">SUB TOTAL <span>$900</span></div>
+                    <div class="grand-tottal">GRAND TOTAL <span>$900</span></div>
+                    <button type="submit" class="btn-pink btn__width">PROCEED TO CHECKOUT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <section class="botton-block">
             <div class="container botton-block-row">

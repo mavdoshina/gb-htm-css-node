@@ -369,7 +369,7 @@ body {
     padding-bottom: 14px;
 }
 
-.header-menu-close {
+.close-buttom {
     display: block;
     width: 15px;
     height: 15px;
@@ -378,23 +378,28 @@ body {
     top: 15px;
 }
 
-.header-menu-close:before,
-.header-menu-close:after {
+.close-buttom:before,
+.close-buttom:after {
     content: '';
     position: absolute;
     left: 50%;
     top: 0;
     height: 15px;
     width: 2px;
-    background-color: #000;
+    background-color: #575757;
     cursor: pointer;
 }
 
-.header-menu-close:before {
+.header-menu-close:before,
+.header-menu-close:after {
+    background-color: #000;
+}
+
+.close-buttom:before {
     transform: rotate(45deg);
 }
 
-.header-menu-close:after {
+.close-buttom:after {
     transform: rotate(-45deg);
 }
 
@@ -1006,14 +1011,6 @@ details.filter-category[open] > summary {
 .registration-form {
     width: 32%;
 
-    .inpt {
-        display: block;
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #A4A4A4;
-        margin-bottom: 21px;
-    }
-
     p {
         font-weight: 300;
         font-size: 13px;
@@ -1023,7 +1020,15 @@ details.filter-category[open] > summary {
     }
 }
 
-.registration-form__submit {
+.inpt-form {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 21px;
+}
+
+.btn-pink {
     background: #F16D7F;
     padding: 16px 27px;
     font-weight: 400;
@@ -1032,6 +1037,39 @@ details.filter-category[open] > summary {
     color: #FFFFFF;
     border: none;
     box-shadow: none;
+    border: 1px solid #F16D7F;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #A4A4A4;
+        color: #A4A4A4;
+        background: #fff;
+    }
+    
+}
+
+.btn__width {
+    width: 100%;
+}
+
+.btn__border {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 17px 40px;
+    border: 1px solid #A4A4A4;
+    color: #A4A4A4;
+    background: #fff;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #F16D7F;
+        background: #F16D7F;
+        color: #FFFFFF;
+    }
+}
+
+.registration-form__submit {
     width: 167px;
     display: flex;
     justify-content: space-between;
@@ -1071,13 +1109,128 @@ details.filter-category[open] > summary {
     margin-left: 10px;
 }
 
+.area-cart {
+    margin-top: 96px;
+    margin-bottom: 128px;
+}
+
+.area-cart__row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .content-area__description {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
+    padding: 22px 30px;
 }
 
 .content-area__description__title {
     margin-bottom: 22px;
     font-weight: 300;
+}
+
+.cart-list {
+    width: 57%;
+}
+
+.cart-list__item__description {
+    padding: 22px 30px;
+
+    h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 42px;
+        width: 75%;
+    }
+
+    .close-buttom {
+        width: 25px;
+        height: 25px;
+        right: 20px;
+        top: 24px;
+    }
+
+    .close-buttom:before, 
+    .close-buttom:after {
+        height: 23px;
+        width: 3px;
+    }
+}
+
+.cart-list__item {
+    display: flex;
+    justify-content: stretch;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.cart-list__item__character {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    margin-bottom: 6px;
+
+    span {
+        color: #F16D7F;
+    }
+
+    .inpt {
+        margin-left: 25px;
+        width: 44px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #656565;
+        text-align: center;
+    }
+}
+
+.cart__btn-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-form {
+    width: 32%;
+}
+
+.total-block {
+    background: #F5F3F3;
+    padding: 40px 44px;
+    margin-top: 55px;
+}
+
+.sub-tottal {
+    text-align: right;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 12px;
+
+    span {
+        display: inline-block;
+        margin-left: 30px;
+    }
+}
+
+.grand-tottal {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    padding-bottom: 21px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #E2E2E2;
+
+    span {
+        display: inline-block;
+        margin-left: 30px;
+        font-weight: 700;
+        color: #F16D7F;
+    }
 }
