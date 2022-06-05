@@ -31,13 +31,13 @@
                     <a href="#" class="user">
                         <img src="img/user.svg" alt="user">
                     </a>
-                    <a href="#" class="basket">
+                    <a href="cart.html" class="basket">
                         <img src="img/basket.svg" alt="basket">
                         <span class="basket-count">5</span>
                     </a>
                 </div>
                 <nav class="header-menu">
-                    <span class="header-menu-close"></span>
+                    <span class="close-buttom header-menu-close"></span>
                     <h4>Menu</h4>
                     <ul class="header-menu-list">
                         <li class="header-menu-item">
@@ -107,92 +107,100 @@
 
         <div class="breadcrumbs-block">
             <div class="container flex-btw">
-                <div class="title-product">NEW ARRIVALS </div>
-                <ul class="breadcrumbs-list">
-                    <li><a href="index.html" class="breadcrumbs-link">HOME</a></li>
-                    <li><a href="#" class="breadcrumbs-link">MEN</a></li>
-                    <li><a href="#" class="breadcrumbs-link">NEW ARRIVALS</a></li>
-                </ul>
+                <h1 class="title-product">NEW ARRIVALS </h1>
+                <nav>
+                    <ul class="breadcrumbs-list">
+                        <li><a href="index.html" class="breadcrumbs-link">HOME</a></li>
+                        <li><a href="catalog.html" class="breadcrumbs-link">MEN</a></li>
+                        <li><a href="#" class="breadcrumbs-link">NEW ARRIVALS</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
+    <section>
     <div class="slider-element">
         <img src="img/slider-1.jpeg" alt="slider1">
         <img src="img/slider-1.jpeg" alt="slider2">
     </div>
 
-    <section class="description-element">
+    <div class="description-element">
         <div class="container description-element-area">
             <div class="description-container">
-                <h4 class="title-collection">WOMEN COLLECTION</h4>
-                <h1 class="title-element">MOSCHINO CHEAP AND CHIC</h1>
-                <p class="description-element-text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-                <div class="description-elemen-price">$561</div>
-                <div class="block-select">
-                    <details>
-                        <summary>CHOOSE COLOR</summary>
-                        <ul class="details-list">
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="green" value="green">
-                                <label for="green">Green</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="pink" value="pink">
-                                <label for="pink">Pink</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="blue" value="blue">
-                                <label for="blue">Blue</label>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>CHOOSE SIZE </summary>
-                        <ul class="details-list">
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="size_xs" value="xs">
-                                <label for="size_xs">XS</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="size_s" value="s">
-                                <label for="size_s">S</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="size_m" value="m">
-                                <label for="size_m">M</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="size_l" value="l">
-                                <label for="size_l">L</label>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>QUANTITY</summary>
-                        <ul class="details-list">
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="q_1" value="1">
-                                <label for="q_1">1</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="q_2" value="2">
-                                <label for="q_2">2</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" name="size" id="q_3" value="3">
-                                <label for="q_3">3</label>
-                            </li>
-                        </ul>
-                    </details>
-                    
-                </div>
-                <button class="product-list-add product-list-add__pink">
-                    <img src="img/cart-add-color.svg" alt="">
-                    <p class="product-list-add-desc">Add to Cart</p>
-                </button>
+                <article>
+                    <h4 class="title-collection">WOMEN COLLECTION</h4>
+                    <h1 class="title-element">MOSCHINO CHEAP AND CHIC</h1>
+                    <p class="description-element-text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                    <div class="description-elemen-price">$561</div>
+                </article>
+                <form action="#">
+                    <div class="block-select">
+                        <details>
+                            <summary>CHOOSE COLOR</summary>
+                            <ul class="details-list">
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="green" value="green">
+                                    <label for="green">Green</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="pink" value="pink">
+                                    <label for="pink">Pink</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="blue" value="blue">
+                                    <label for="blue">Blue</label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>CHOOSE SIZE </summary>
+                            <ul class="details-list">
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_xs" value="xs">
+                                    <label for="size_xs">XS</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_s" value="s">
+                                    <label for="size_s">S</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_m" value="m">
+                                    <label for="size_m">M</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_l" value="l">
+                                    <label for="size_l">L</label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>QUANTITY</summary>
+                            <ul class="details-list">
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="q_1" value="1">
+                                    <label for="q_1">1</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="q_2" value="2">
+                                    <label for="q_2">2</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="q_3" value="3">
+                                    <label for="q_3">3</label>
+                                </li>
+                            </ul>
+                        </details>
+                        
+                    </div>
+                    <button class="product-list-add product-list-add__pink">
+                        <img src="img/cart-add-color.svg" alt="">
+                        <p class="product-list-add-desc">Add to Cart</p>
+                    </button>
+                </form>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="product-list product-list__catalog">
@@ -276,12 +284,14 @@
         <div class="copyright">
             <div class="container copyright-flex">
                 <div class="copyright-text">© 2021  Brand  All Rights Reserved</div>
-                <ul class="icon-list">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
+                <nav>
+                    <ul class="icon-list">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>
