@@ -30,10 +30,23 @@
                     <a href="registration.html" class="user">
                         <img src="img/user.svg" alt="user">
                     </a>
-                    <a href="cart.html" class="basket">
+                    <span class="basket">
                         <img src="img/basket.svg" alt="basket">
                         <span class="basket-count">5</span>
-                    </a>
+                    </span>
+                    <div class="cart-area">
+                        <div class="cart-area-row basketHeader">
+                            <div>Название товара</div>
+                            <div>Количество</div>
+                            <div>Цена за шт.</div>
+                            <div>Итого</div>
+                        </div>
+                        <div class="cart-area-total">
+                            Товаров в корзине на сумму:
+                            $<span class="cart-total">0</span>
+                        </div>
+                        <a href="/cart.html" class="btn-pink btn__order">Оформить заказ</a>
+                    </div>
                 </div>
                 <nav class="header-menu">
                     <span class="close-buttom header-menu-close"></span>
@@ -171,10 +184,10 @@
                     </a>
 
                     <div class="product-list-add-box">
-                        <a class="product-list-add" href="cart.html">
+                        <div class="product-list-add" href="cart.html">
                             <img src="img/cart-add.svg" alt="">
-                            <p class="product-list-add-desc">Add to Cart</p>
-                        </a>
+                            <p class="product-list-add-desc" data-id="1" data-price="520">Add to Cart</p>
+                        </div>
                     </div>
                 </div>
                 <div class="product-list-item">
@@ -330,5 +343,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
