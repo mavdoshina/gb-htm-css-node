@@ -67,7 +67,6 @@ function productRender(id) {
 
     cartItem.querySelector('.cart-item__price-all')
         .textContent = getSummCartItem(id);
-    console.log(cartItem);
 
 }
 
@@ -85,7 +84,6 @@ function newProductRender(id) {
 function getTotalAll() {
     let totalAll = 0;
     for (let item in products) {
-        console.log(item);
         totalAll += +(products[item].count * products[item].price).toFixed(2);
     }
 
