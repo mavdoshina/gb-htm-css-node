@@ -67,7 +67,6 @@ function productRender(id) {
 
     cartItem.querySelector('.cart-item__price-all')
         .textContent = getSummCartItem(id);
-
 }
 
 function newProductRender(id) {
