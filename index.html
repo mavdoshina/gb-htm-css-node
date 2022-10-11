@@ -12,6 +12,7 @@
     <title>Главная страница</title>
 </head>
 <body>
+    <div id="app">
     <header class="header">
         <div class="header-block">
             <div class="container flex-btw">
@@ -169,10 +170,15 @@
         </div>
     </section>
 
+   
+
     <section class="product-list">
         <div class="container">
             <h3 class="product-list-heading">Fetured Items</h3>
             <p class="product-list-description">Shop for items based on what we featured in this week</p>
+
+            <products ref="products"></products>
+
             <div class="product-list-item-flex">
                 <div class="product-list-item">
                     <a class="product-list-item-link" href="product.html">
@@ -343,7 +349,14 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="cart.js"></script>
+    </div>
+    <!-- <script src="js/script.js"></script>
+    <script src="js/cart.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/ProducComp.js"></script>
+    <script src="js/SearchComp.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
