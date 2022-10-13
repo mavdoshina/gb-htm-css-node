@@ -30,6 +30,8 @@ Vue.component('cart', {
                     })
             } else {
                 const prod = Object.assign({quantity: 1}, item);
+                console.log(prod);
+                console.log(item);
                 this.$parent.postJson(`/api/cart`, prod)
                     .then(data => {
                         if(data.result === 1){
@@ -52,16 +54,36 @@ Vue.component('cart', {
             //     })
         },
         remove(item){
-            this.$parent.getJson(`${API}/addToBasket.json`)
-                .then(data => {
-                    if (data.result === 1) {
-                        if(item.quantity>1){
-                            item.quantity--;
-                        } else {
+
+            let find = this.cartItems.find(el => el.id_product === item.id_product);
+            console.log(item.quantity);
+            if(item.quantity>1){
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: -1})
+                    .then(data => {
+                        if(data.result === 1){
+                            find.quantity--
+                        }
+                    })
+            } else {
+                
+                this.$parent.delJson(`/api/cart/${find.id_product}`, item)
+                    .then(data => {
+                        if(data.result === 1){
                             this.cartItems.splice(this.cartItems.indexOf(item), 1);
                         }
-                    }
-                })
+                    })
+            }
+
+            // this.$parent.getJson(`${API}/addToBasket.json`)
+            //     .then(data => {
+            //         if (data.result === 1) {
+            //             if(item.quantity>1){
+            //                 item.quantity--;
+            //             } else {
+            //                 this.cartItems.splice(this.cartItems.indexOf(item), 1);
+            //             }
+            //         }
+            //     })
         },
     },
     template: `<div>
