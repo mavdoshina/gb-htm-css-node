@@ -13,6 +13,7 @@
     <title>Страница продукта</title>
 </head>
 <body>
+    <div id="app">
     <main>
     <header class="header">
         <div class="header-block">
@@ -26,7 +27,7 @@
                     </div>
                 </div>
                 <div class="header-right flex-row">
-                    <div class="menu">
+                    <div class="menu" @click="showMenu = !showMenu">
                         <img src="img/menu.svg" alt="menu">
                     </div>
                     <a href="registration.html" class="user">
@@ -37,7 +38,7 @@
                         <span class="basket-count">5</span>
                     </a>
                 </div>
-                <nav class="header-menu">
+                <nav class="header-menu" v-show="showMenu">
                     <span class="close-buttom header-menu-close"></span>
                     <h4>Menu</h4>
                     <ul class="header-menu-list">
@@ -296,7 +297,10 @@
             </div>
         </div>
     </footer>
+    </div>  
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/product-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/ProductComponent.js"></script>
     <script src="js/CartComponent.js"></script>

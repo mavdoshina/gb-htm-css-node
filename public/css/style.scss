@@ -225,7 +225,7 @@ body {
 }
 
 .botton-block {
-    background-image: url(img/footer-bg.jpeg);
+    background-image: url(/img/footer-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 448px;
@@ -361,7 +361,7 @@ body {
     width: 232px;
     height: 764px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    display: none;
+    // display: none;
 }
 
 .header-menu.active-menu {
@@ -773,7 +773,7 @@ details.filter-details[open] > summary::after {
     display: inline-block;;
     width: 15px;
     height: 10px;
-    background-image: url(img/filter.svg);
+    background-image: url(/img/filter.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }

@@ -25,14 +25,6 @@
             "price": 200,
             "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
             "img": "img/product-3.jpeg"
-        },
-        {
-            "quantity": 2,
-            "id_product": 4,
-            "product_name": "Pants",
-            "price": 200,
-            "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-            "img": "img/product-4.jpeg"
         }
     ]
 }
