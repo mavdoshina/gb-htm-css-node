@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ed391f96d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Страница продукта</title>
+</head>
+<body>
+    <div id="app">
+    <main>
+    <header class="header">
+        <div class="header-block">
+            <div class="container flex-btw">
+                <div class="header-left flex-row">
+                    <a href="/" class="logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <div class="search">
+                        <img src="img/search.svg" alt="search">
+                    </div>
+                </div>
+                <div class="header-right flex-row">
+                    <div class="menu" @click="showMenu = !showMenu">
+                        <img src="img/menu.svg" alt="menu">
+                    </div>
+                    <a href="registration.html" class="user">
+                        <img src="img/user.svg" alt="user">
+                    </a>
+                    <a href="cart.html" class="basket">
+                        <img src="img/basket.svg" alt="basket">
+                        <span class="basket-count">5</span>
+                    </a>
+                </div>
+                <nav class="header-menu" v-show="showMenu">
+                    <span class="close-buttom header-menu-close"></span>
+                    <h4>Menu</h4>
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-item-title" href="">MAN</a>
+                            <ul class="header-sub-menu">
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Bags</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Denim</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-item-title" href="">WOMAN</a>
+                            <ul class="header-sub-menu">
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Jackets & Coats</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Shirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-item-title" href="">KIDS</a>
+                            <ul class="header-sub-menu">
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Jackets & Coats</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Shirts</a>
+                                </li>
+                                <li class="header-sub-menu-item">
+                                    <a href="#">Bags</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="breadcrumbs-block">
+            <div class="container flex-btw">
+                <h1 class="title-product">NEW ARRIVALS </h1>
+                <nav>
+                    <ul class="breadcrumbs-list">
+                        <li><a href="index.html" class="breadcrumbs-link">HOME</a></li>
+                        <li><a href="catalog.html" class="breadcrumbs-link">MEN</a></li>
+                        <li><a href="#" class="breadcrumbs-link">NEW ARRIVALS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+</main>
+    <section>
+    <div class="slider-element">
+        <img src="img/slider-1.jpeg" alt="slider1">
+        <img src="img/slider-1.jpeg" alt="slider2">
+    </div>
+
+    <div class="description-element">
+        <div class="container description-element-area">
+            <div class="description-container">
+                <article>
+                    <h4 class="title-collection">WOMEN COLLECTION</h4>
+                    <h1 class="title-element">MOSCHINO CHEAP AND CHIC</h1>
+                    <p class="description-element-text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                    <div class="description-elemen-price">$561</div>
+                </article>
+                <form action="#">
+                    <div class="block-select">
+                        <details>
+                            <summary>CHOOSE COLOR</summary>
+                            <ul class="details-list">
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="green" value="green">
+                                    <label for="green">Green</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="pink" value="pink">
+                                    <label for="pink">Pink</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="blue" value="blue">
+                                    <label for="blue">Blue</label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>CHOOSE SIZE </summary>
+                            <ul class="details-list">
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_xs" value="xs">
+                                    <label for="size_xs">XS</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_s" value="s">
+                                    <label for="size_s">S</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_m" value="m">
+                                    <label for="size_m">M</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="size_l" value="l">
+                                    <label for="size_l">L</label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>QUANTITY</summary>
+                            <ul class="details-list">
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="q_1" value="1">
+                                    <label for="q_1">1</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="q_2" value="2">
+                                    <label for="q_2">2</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" name="size" id="q_3" value="3">
+                                    <label for="q_3">3</label>
+                                </li>
+                            </ul>
+                        </details>
+                        
+                    </div>
+                    <button class="product-list-add product-list-add__pink">
+                        <img src="img/cart-add-color.svg" alt="">
+                        <p class="product-list-add-desc">Add to Cart</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="product-list product-list__catalog">
+        <div class="container">
+            <div class="product-list-item-flex">
+                <div class="product-list-item">
+                    <a class="product-list-item-link" href="#">
+                        <img class="product-list-item-pic" src="img/product-4.jpeg" alt="product">
+                        <div class="product-list-txt-box">
+                            <p class="product-list-item-title">ELLERY X M'O CAPSULE</p>
+                            <p class="product-list-item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="product-list-item-price">$520</p>
+                        </div>
+                    </a>
+
+                    <div class="product-list-add-box">
+                        <a class="product-list-add" href="#">
+                            <img src="img/cart-add.svg" alt="">
+                            <p class="product-list-add-desc">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item">
+                    <a class="product-list-item-link" href="#">
+                        <img class="product-list-item-pic" src="img/product-5.jpeg" alt="product">
+                        <div class="product-list-txt-box">
+                            <p class="product-list-item-title">ELLERY X M'O CAPSULE</p>
+                            <p class="product-list-item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="product-list-item-price">$520</p>
+                        </div>
+                    </a>
+
+                    <div class="product-list-add-box">
+                        <a class="product-list-add" href="#">
+                            <img src="img/cart-add.svg" alt="">
+                            <p class="product-list-add-desc">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-list-item">
+                    <a class="product-list-item-link" href="#">
+                        <img class="product-list-item-pic" src="img/product-6.jpeg" alt="product">
+                        <div class="product-list-txt-box">
+                            <p class="product-list-item-title">ELLERY X M'O CAPSULE</p>
+                            <p class="product-list-item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="product-list-item-price">$520</p>
+                        </div>
+                    </a>
+
+                    <div class="product-list-add-box">
+                        <a class="product-list-add" href="#">
+                            <img src="img/cart-add.svg" alt="">
+                            <p class="product-list-add-desc">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="botton-block">
+            <div class="container botton-block-row">
+                <article class="left-block">
+                    <figure class="left-block-img">
+                        <img src="img/footer-img.png" alt="women">
+                    </figure>
+                    <p class="left-block-description">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a <i>pulvinar purus condimentum</i>“</p>
+                </article>
+                <form class="footer-form">
+                    <h3 class="footer-form-title">SUBSCRIBE </h3>
+                    <p class="footer-form-subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <div class="botton-block_form-group">
+                        <input type="text" class="inpt" name="mail" id="" placeholder="Enter Your Email">
+                        <button type="submit" class="submit">Subscribe</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+        <div class="copyright">
+            <div class="container copyright-flex">
+                <div class="copyright-text">© 2021  Brand  All Rights Reserved</div>
+                <nav>
+                    <ul class="icon-list">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    </div>  
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/product-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
